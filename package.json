@@ -4,7 +4,8 @@
   "description": "JWT",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --watch --no-daemon"
+    "start": "pm2 start index.js --watch --no-daemon",
+    "lint": "eslint -c .eslintrc lib"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "eslint": "^4.7.0",
+    "eslint-config-airbnb": "15.1.0",
     "pm2": "^2.6.1",
     "webpack": "^3.5.6"
   }
