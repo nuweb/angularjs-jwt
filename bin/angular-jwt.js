@@ -4,9 +4,6 @@
 const fs = require('fs');
 const path = require('path');
 
-// import environmental variables from our .env file
-require('dotenv').config();
-
 try {
   const babelrc = fs.readFileSync(path.resolve(__dirname, '../.babelrc'));
   const config = JSON.parse(babelrc);
